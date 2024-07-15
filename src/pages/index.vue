@@ -38,6 +38,18 @@
     &:last-child:after {
       display: none;
     }
+    &:first-child {
+      text-align: left;
+      @media(max-width: 1023px) {
+        text-align: auto;
+      }
+    }
+    &:last-child {
+      text-align: right;
+      @media(max-width: 1023px) {
+        text-align: left;
+      }
+    }
   }
 }
 </style>
